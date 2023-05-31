@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color :bisque;
+    width: 400px;
+    height: 430px;
+}
+
+.button{
+    background-color: #0bdce3;
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.buttonlong{
+    background-color: #0bdce3;
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+}

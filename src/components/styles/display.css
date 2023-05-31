@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.display{
+    background-color: #9f9992;
+    width: 400px;
+    height: 100px;
+}
