@@ -1,24 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    background-color :bisque;
-    width: 400px;
+.container {
+    background-color: bisque;
     height: 430px;
 }
 
-.button{
+.button {
     background-color: #0bdce3;
     height: 50px;
-    width: 50px;
-    margin-left: 40px;
-    margin-top: 20px;
+    flex-grow: 1;  
+    flex: 1;
 }
 
-.buttonlong{
+.buttonlong {
     background-color: #0bdce3;
     height: 50px;
     width: 50px;

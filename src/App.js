@@ -1,7 +1,4 @@
-
-import './App.css';
-
-
+ 
 import Wrap from './components/Wrap';
 
 function App() {

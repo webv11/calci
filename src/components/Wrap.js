@@ -1,6 +1,6 @@
+import { useState } from "react";
 import Buttons from "./Buttons";
 import Display from "./Display";
-import './styles/wrap.css'
 
 const buttonsData = [
     ["AC", "CE", "%", "X"],
@@ -10,14 +10,34 @@ const buttonsData = [
     [0, ".", "", ""],
 ]
 
+const wrapperStyle = {
+    width: "400px",
+    margin: "50px auto 0 auto"
+}
+
 let Wrap = () => {
-    return(
-        <>
-        <div className="wrap">
-        <Display/>
-        <Buttons data = {buttonsData}/>
+
+    const [displayValue, setDisplayValue] = useState("")
+
+    const handleOnButtonClick = (e) => {
+        const { innerText } = e.target;
+
+
+        if (innerText === "=") {
+            // Submit logic
+            setDisplayValue(eval(displayValue))
+        } else {
+            // Number Logic
+            setDisplayValue(displayValue + innerText)
+            // Operator
+        }
+    }
+
+    return (
+        <div style={wrapperStyle}>
+            <Display value={displayValue} />
+            <Buttons onClick={handleOnButtonClick} data={buttonsData} />
         </div>
-        </>
     );
 }
 
